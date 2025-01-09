@@ -1,0 +1,18 @@
+{
+    "Pair": "Snacks",
+    "Type": "Cold Drink",
+    "Items":{
+        "Soda":{
+            "Stock": 5,
+            "Price": 2
+        },
+        "Milk": {
+            "Stock": 5,
+            "Price": 2
+        },
+        "Water": {
+            "Stock": 5,
+            "Price": 1
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Pair": "Cold Drink",
+    "Type": "Snacks",
+    "Items":{
+        "Chips":{
+            "Stock": 5,
+            "Price": 2
+        },
+        "Choco": {
+            "Stock": 5,
+            "Price": 3
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Pair": "Fruit",
+    "Type": "Juice",
+    "Items":{
+        "Apple Juice":{
+            "Stock": 5,
+            "Price": 1
+        },
+        "Orange Juice": {
+            "Stock": 5,
+            "Price": 2
+        }
+    }
+}
