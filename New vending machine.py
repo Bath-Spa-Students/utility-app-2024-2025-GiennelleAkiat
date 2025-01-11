@@ -1,7 +1,7 @@
 import glob
 import json
 import random
-
+data_path = "data for vending machine/"
 products_list = list()
 products_list.append({
     "ID": 0,
@@ -17,7 +17,7 @@ product_id = 0
 
 #-------------------Save Data
 def save_data(type,item_name,stock):
-    json_file = f"Class Activities/data for vending machine/{type.lower()}.json"
+    json_file = f"{data_path}{type.lower()}.json"
     with open(json_file,"r") as file:
          json_data = json.load(file)
     item_data = json_data["Items"][item_name]
@@ -27,7 +27,7 @@ def save_data(type,item_name,stock):
 
 #-------------------Load Data
 def load_data(type):
-    json_file = f"Class Activities/data for vending machine/{type.lower()}.json"
+    json_file = f"{data_path}{type.lower()}.json"
     with open(json_file,"r") as file:
          json_data = json.load(file)
     return json_data
@@ -175,7 +175,7 @@ def vending_machine(products_list, done, customer_items, money):
 #---------------------VENDING MACHINE ITEMS
 #===============================================================
 
-for file in glob.glob(r"Class Activities\data for vending machine\*.json"):
+for file in glob.glob(f"{data_path}*.json"):
     with open(file,"r") as jsonFile:
             json_data= json.load(jsonFile)
     for item_name, item_data in json_data["Items"].items():
