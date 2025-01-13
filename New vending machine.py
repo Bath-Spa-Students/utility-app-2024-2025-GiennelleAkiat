@@ -74,7 +74,7 @@ def show_rec(customer_items,money):
         name=""
         # print(json.dumps(customer_items, indent=4))
         for item_name,item_data in customer_items.items():
-            name=item_name
+            name = item_name
             if item_data["Pair"] in type:
                 pair=item_data["Pair"]
                 type_name=item_data["Type"]
